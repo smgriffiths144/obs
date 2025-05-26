@@ -1,0 +1,7 @@
+to add CPU load
+
+yes > /dev/null &
+
+to stop load
+
+killall yes
