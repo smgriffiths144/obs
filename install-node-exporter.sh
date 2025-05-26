@@ -2,9 +2,10 @@
 
 wget https://github.com/prometheus/node_exporter/releases/download/v1.9.1/node_exporter-1.9.1.linux-amd64.tar.gz
 tar xvfz node_exporter-1.9.1.linux-amd64.tar.gz
-#cd node_exporter-1.9.1.linux-amd64
+cd node_exporter-1.9.1.linux-amd64
+cp node_exporter /usr/local/bin/
 #./node_exporter
-/etc/systemd/system/
+cd /etc/systemd/system/
 useradd node_exporter
 cat > node_exporter.service <<- "EOF"
 #Node Exporter service file — /etc/systemd/system/node_exporter.service
